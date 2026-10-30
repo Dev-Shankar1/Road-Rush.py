@@ -1,0 +1,10 @@
+name: Run Script
+on: push
+jobs:
+  run-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run code
+        run: python Road-Rush.py
+        
